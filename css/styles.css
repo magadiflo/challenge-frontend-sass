@@ -12,11 +12,11 @@ body {
 @media (min-width: 1440px) {
   .main-container {
     width: 1440px;
+    height: unset;
   }
 }
 
 .navbar {
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   margin: 25px auto 100px;
@@ -24,7 +24,27 @@ body {
 @media (min-width: 1440px) {
   .navbar {
     width: 1300px;
+    height: unset;
   }
+}
+.navbar__logo {
+  width: 95px;
+  height: 16px;
+}
+@media (min-width: 1440px) {
+  .navbar__logo {
+    width: 240px;
+    height: 38px;
+  }
+}
+.navbar__button {
+  background-color: #FFF;
+  border: none;
+  border: 1px solid hsl(321deg, 100%, 78%);
+  border-radius: 50px;
+  color: hsl(321deg, 100%, 78%);
+  width: 80px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

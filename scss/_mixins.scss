@@ -1,5 +1,18 @@
-@mixin desktop-view($width) {
+//* unset, es el valor por defecto de $height, significa que si no le pasamos 
+//* valor al $height, no le ponga nada
+@mixin desktop-view($width, $height: unset) {
     @media (min-width: 1440px) {
         width: $width;
+        height: $height;
     }
+}
+
+@mixin button($bg-color, $br-color, $fn-color, $width, $height) {
+    background-color: $bg-color;
+    border: none;
+    border: 1px solid $br-color;
+    border-radius: 50px;
+    color: $fn-color;
+    width: $width;
+    height: $height;
 }

@@ -17,10 +17,20 @@ body {
 }
 
 .navbar {
-    border: 1px solid green;
+    // border: 1px solid green;
     display: flex;
     justify-content: space-between;
     margin: 25px auto 100px;
 
     @include m.desktop-view(1300px);
+
+    &__logo {
+        width: 95px;
+        height: 16px;
+        @include m.desktop-view(240px, 38px)
+    }
+
+    &__button {
+        @include m.button(v.$white, v.$light-pink, v.$light-pink, 80px, 24px);
+    }
 }
