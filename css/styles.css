@@ -1,6 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
+  color: hsl(32deg, 100%, 9%);
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 375px;
+  margin: 0 auto 25px;
+}
+@media (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+  }
+}
+
+.navbar {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 100px;
+}
+@media (min-width: 1440px) {
+  .navbar {
+    width: 1300px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,26 @@
 @use './variables' as v;
+@use './mixins' as m;
+
+
 
 body {
     font-family: v.$body-font;
+    color: v.$very-dark-cyan;
+}
+
+.main-container {
+    border: 1px solid red;
+    width: 375px;
+    margin: 0 auto 25px;
+
+    @include m.desktop-view(1440px);
+}
+
+.navbar {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 100px;
+
+    @include m.desktop-view(1300px);
 }
