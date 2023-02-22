@@ -1,18 +1,37 @@
+@use './variables' as v;
+
 //* unset, es el valor por defecto de $height, significa que si no le pasamos 
-//* valor al $height, no le ponga nada
-@mixin desktop-view($width, $height: unset) {
+//* valor al $height, no le ponga nada, que no le setee nada, es como si dejaramos 
+//* esa propiedad tal cual lo tiene por defecto.
+@mixin desktop-view($width, $height: unset, $font-size: unset) {
     @media (min-width: 1440px) {
         width: $width;
         height: $height;
+        font-size: $font-size;
     }
 }
 
-@mixin button($bg-color, $br-color, $fn-color, $width, $height) {
+@mixin button($bg-color, $br-color, $fn-color, $width, $height, $center) {
     background-color: $bg-color;
     border: none;
     border: 1px solid $br-color;
     border-radius: 50px;
+    display: block;
     color: $fn-color;
     width: $width;
     height: $height;
+
+    @if ($center == true) {
+        margin: 0 auto;
+    }
+}
+
+@mixin button-hover($bg-color) {
+
+    //* &, significa el elemento actual
+    &:hover {
+        cursor: pointer;
+        background-color: $bg-color;
+        color: v.$white;
+    }
 }

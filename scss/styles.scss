@@ -31,6 +31,37 @@ body {
     }
 
     &__button {
-        @include m.button(v.$white, v.$light-pink, v.$light-pink, 80px, 24px);
+        @include m.button(v.$white, v.$light-pink, v.$light-pink, 80px, 24px, false);
+        @include m.desktop-view(134px, 42px);
+        @include m.button-hover(v.$light-pink);
     }
+}
+
+.header {
+    &__title {
+        font-family: v.$headings-font;
+        text-align: center;
+        width: 265px;
+        font-size: 1.48em;
+        margin: 0 auto 36px;
+        @include m.desktop-view(1100px, unset, 2.98em);
+    }
+
+    &__description {
+        text-align: center;
+        margin: 0 auto 49px;
+        font-weight: 600;
+        font-size: 0.8em;
+        width: 290px;
+        @include m.desktop-view(590px, 80px, 1.25em);
+    }
+
+    &__button {
+        @include m.button(v.$pink, unset, v.$very-pale-blu, 200px, 40px, true);
+        @include m.desktop-view(400px, 80px, 1.25em);
+        @include m.button-hover(v.$light-pink);
+        margin-bottom: 290px;
+    }
+
+    &__screen-mockups {}
 }
