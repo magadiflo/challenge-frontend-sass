@@ -21,7 +21,7 @@
     width: $width;
     height: $height;
 
-    @if ($center == true) {
+    @if ($center ==true) {
         margin: 0 auto;
     }
 }
@@ -33,5 +33,58 @@
         cursor: pointer;
         background-color: $bg-color;
         color: v.$white;
+    }
+}
+
+@mixin stats($logo-size) {
+    margin-bottom: 98px;
+
+    &__logo {
+        width: $logo-size;
+    }
+
+    &__stats {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    &__description {
+        font-size: 0.8em;
+        text-align: center;
+
+        //* @content, significa que podemos agregar código aquí. 
+        //* Para ver como se puede agregar dicho código, ir al archivo
+        //* styles.scss , sección .section-stats .messages... allí
+        //* mencionamos cómo es que agregamos código.
+        @content;
+    }
+}
+
+@mixin flex-sections() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+
+    .image-container {
+        &__illustration {
+            width: 246px;
+            margin-bottom: 78px;
+        }
+    }
+
+    .description {
+        &__title {
+            font-family: v.$headings-font;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        &__content {
+            text-align: center;
+            font-size: 0.9em;
+            width: 330px;
+        }
     }
 }

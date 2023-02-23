@@ -128,4 +128,106 @@ body {
   }
 }
 
+.section-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-stats .comunities {
+  margin-bottom: 98px;
+}
+.section-stats .comunities__logo {
+  width: 32px;
+}
+.section-stats .comunities__stats {
+  font-size: 4em;
+  margin: 0;
+}
+.section-stats .comunities__description {
+  font-size: 0.8em;
+  text-align: center;
+}
+.section-stats .messages {
+  margin-bottom: 98px;
+}
+.section-stats .messages__logo {
+  width: 24px;
+}
+.section-stats .messages__stats {
+  font-size: 4em;
+  margin: 0;
+}
+.section-stats .messages__description {
+  font-size: 0.8em;
+  text-align: center;
+  width: 69px;
+  margin: auto;
+}
+
+.section-grow-together {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 180px;
+}
+.section-grow-together .image-container__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section-grow-together .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-grow-together .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+
+.section-flowing-conversations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 180px;
+}
+.section-flowing-conversations .image-container__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section-flowing-conversations .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-flowing-conversations .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+
+.section-your-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 180px;
+}
+.section-your-users .image-container__illustration {
+  width: 246px;
+  margin-bottom: 78px;
+}
+.section-your-users .description__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.section-your-users .description__content {
+  text-align: center;
+  font-size: 0.9em;
+  width: 330px;
+}
+
 /*# sourceMappingURL=styles.css.map */
