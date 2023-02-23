@@ -63,5 +63,10 @@ body {
         margin-bottom: 290px;
     }
 
-    &__screen-mockups {}
+    &__screen-mockups {
+        width: 300px;
+        margin: 0 auto 138px;
+        display: block;
+        @include m.desktop-view(1020px, 725px);
+    }
 }

@@ -115,5 +115,17 @@ body {
   background-color: hsl(321deg, 100%, 78%);
   color: #FFF;
 }
+.header__screen-mockups {
+  width: 300px;
+  margin: 0 auto 138px;
+  display: block;
+}
+@media (min-width: 1440px) {
+  .header__screen-mockups {
+    width: 1020px;
+    height: 725px;
+    font-size: unset;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
