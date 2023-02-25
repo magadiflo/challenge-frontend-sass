@@ -60,6 +60,31 @@
     }
 }
 
+@mixin stats-desktop($logo-size) {
+    @media (min-width: 1440px) {
+        &__logo {
+            width: $logo-size;
+        }
+
+        &__stats {
+            font-size: 6em;
+        }
+
+        &__description {
+            font-size: 1.5em;
+            width: auto;
+        }
+    }
+}
+
+@mixin section-stats-desktop() {
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 800px;
+    }
+}
+
 @mixin flex-sections() {
     display: flex;
     flex-direction: column;
@@ -85,6 +110,34 @@
             text-align: center;
             font-size: 0.9em;
             width: 330px;
+        }
+    }
+}
+
+@mixin flex-sections-desktop($direction: row) {
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-direction: $direction;
+        height: 800px;
+
+        .image-container {
+            &__illustration {
+                width: 527px;
+            }
+        }
+
+        .description {
+            &__title {
+                font-size: 2.3em;
+                text-align: left;
+            }
+
+            &__content {
+                text-align: left;
+                font-size: 1em;
+                width: 495px;
+            }
         }
     }
 }

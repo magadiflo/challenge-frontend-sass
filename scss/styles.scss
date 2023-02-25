@@ -76,8 +76,11 @@ body {
     flex-direction: column;
     align-items: center;
 
+    @include m.section-stats-desktop();
+
     .comunities {
         @include m.stats(32px);
+        @include m.stats-desktop(50px);
     }
 
     .messages {
@@ -90,17 +93,22 @@ body {
             width: 69px;
             margin: auto;
         }
+
+        @include m.stats-desktop(42px);
     }
 }
 
 .section-grow-together {
     @include m.flex-sections();
+    @include m.flex-sections-desktop(row-reverse);
 }
 
 .section-flowing-conversations {
     @include m.flex-sections();
+    @include m.flex-sections-desktop();
 }
 
 .section-your-users {
     @include m.flex-sections();
+    @include m.flex-sections-desktop(row-reverse);
 }
