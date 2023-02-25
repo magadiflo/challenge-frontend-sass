@@ -89,7 +89,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 180px;
+    // margin-bottom: 180px;
+    padding: 150px 0;
 
     .image-container {
         &__illustration {
@@ -138,6 +139,22 @@
                 font-size: 1em;
                 width: 495px;
             }
+        }
+    }
+}
+
+@mixin banner($url-top, $url-bottom) {
+    background: {
+        image: url($url-top), url($url-bottom);
+        repeat: no-repeat, no-repeat;
+        position-y: top, bottom;
+    }
+}
+
+@mixin banner-desktop($url-top, $url-bottom) {
+    @media (min-width: 1440px) {
+        background: {
+            image: url($url-top), url($url-bottom);
         }
     }
 }

@@ -132,6 +132,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(""), url("../images/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
 }
 @media (min-width: 1440px) {
   .section-stats {
@@ -194,12 +197,18 @@ body {
     width: auto;
   }
 }
+@media (min-width: 1440px) {
+  .section-stats {
+    background-image: url(""), url("../images/bg-section-top-desktop-1.svg");
+  }
+}
 
 .section-grow-together {
+  background-color: hsl(207deg, 100%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
 }
 .section-grow-together .image-container__illustration {
   width: 246px;
@@ -241,7 +250,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
+  background-image: url("../images/bg-section-bottom-mobile-1.svg"), url("../images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+  background-image: url("../images/bg-section-bottom-desktop-1.svg"), url("../images/bg-section-top-desktop-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
 }
 .section-flowing-conversations .image-container__illustration {
   width: 246px;
@@ -280,10 +295,11 @@ body {
 }
 
 .section-your-users {
+  background-color: hsl(207deg, 100%, 98%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 180px;
+  padding: 150px 0;
 }
 .section-your-users .image-container__illustration {
   width: 246px;
@@ -319,6 +335,21 @@ body {
     font-size: 1em;
     width: 495px;
   }
+}
+
+.section-your-comunity {
+  background-image: url("../images/bg-section-bottom-mobile-2.svg"), url("../images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: top, bottom;
+  height: 600px;
+}
+@media (min-width: 1440px) {
+  .section-your-comunity {
+    background-image: url("../images/bg-section-bottom-desktop-2.svg"), url("../images/bg-footer-top-desktop.svg");
+  }
+}
+.section-your-comunity__title {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

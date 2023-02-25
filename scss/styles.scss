@@ -96,9 +96,13 @@ body {
 
         @include m.stats-desktop(42px);
     }
+
+    @include m.banner('', '../images/bg-section-top-mobile-1.svg');
+    @include m.banner-desktop('', '../images/bg-section-top-desktop-1.svg');
 }
 
 .section-grow-together {
+    background-color: v.$very-pale-blu;
     @include m.flex-sections();
     @include m.flex-sections-desktop(row-reverse);
 }
@@ -106,9 +110,24 @@ body {
 .section-flowing-conversations {
     @include m.flex-sections();
     @include m.flex-sections-desktop();
+    @include m.banner('../images/bg-section-bottom-mobile-1.svg', '../images/bg-section-top-mobile-2.svg');
+    @include m.banner('../images/bg-section-bottom-desktop-1.svg', '../images/bg-section-top-desktop-2.svg');
 }
 
 .section-your-users {
+    background-color: v.$very-pale-blu;
     @include m.flex-sections();
     @include m.flex-sections-desktop(row-reverse);
+}
+
+.section-your-comunity {
+    @include m.banner('../images/bg-section-bottom-mobile-2.svg', '../images/bg-footer-top-mobile.svg');
+    @include m.banner-desktop('../images/bg-section-bottom-desktop-2.svg', '../images/bg-footer-top-desktop.svg');
+    height: 600px;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__button {}
 }
