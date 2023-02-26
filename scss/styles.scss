@@ -123,11 +123,23 @@ body {
 .section-your-comunity {
     @include m.banner('../images/bg-section-bottom-mobile-2.svg', '../images/bg-footer-top-mobile.svg');
     @include m.banner-desktop('../images/bg-section-bottom-desktop-2.svg', '../images/bg-footer-top-desktop.svg');
-    height: 600px;
+    height: 400px;
+    padding-top: 250px;
+
 
     &__title {
         margin-top: 0;
+        //* Extendemos los estilos que tenga la clase .header__title
+        @extend .header__title;
     }
 
-    &__button {}
+    &__button {
+        @extend .header__button;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section-your-comunity {
+        height: 600px;
+    }
 }
