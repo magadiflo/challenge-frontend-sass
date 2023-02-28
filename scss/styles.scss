@@ -150,6 +150,15 @@ body {
     padding: 70px 24px 40px;
 }
 
+@media (min-width: 1440px) {
+    .newsletter {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+}
+
+
 .newsletter-subscription {
     margin-bottom: 100px;
 
@@ -189,6 +198,40 @@ body {
     }
 }
 
+@media (min-width: 1440px) {
+    .newsletter-subscription {
+
+        display: flex;
+        width: 580px;
+        height: 238px;
+
+        &__title {
+            font-size: 1.6em;
+        }
+
+        &__description {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        &__input {
+            width: 90%;
+        }
+
+        &__submit {
+            width: 160px;
+            height: 50px;
+        }
+
+        &__submit-container {
+            align-items: flex-end;
+        }
+    }
+
+}
+
+
+
 .newsletter-contact {
     &__logo-huddle {
         width: 206px;
@@ -219,5 +262,18 @@ body {
         height: 30px;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 1440px) {
+    .newsletter-contact {
+        &__logo-huddle {
+            width: 250px;
+        }
+
+        &__description {
+            font-size: 1.1em;
+            width: 370px;
+        }
     }
 }
