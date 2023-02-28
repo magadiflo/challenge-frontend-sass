@@ -2,6 +2,8 @@
 
 ![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
 
+## [Obteniendo las fuentes de font-awesome](https://fontawesome.com/v4/icon/twitter-square)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
